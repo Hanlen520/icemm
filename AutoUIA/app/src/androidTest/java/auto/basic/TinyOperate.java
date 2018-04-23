@@ -263,7 +263,7 @@ public class TinyOperate extends InstrumentationTestCase {
         int num = 0;
         if (!strId.equals("")) {
             int targetId = solo.getCurrentActivity().getResources()
-                    .getIdentifier(strId, "id", "com.blued.international");
+                    .getIdentifier(strId, "id", Information.packageName);
             for (int t = 0; t < al.size(); t++) {
                 if (al.get(t).getId() == targetId)
                     num++;
